@@ -3,7 +3,7 @@ LineGraph
 
 iOS LineGraph - library
 
-Its bit difficult to get a simple library with creates line charts for iOS. So here's one.
+Its bit difficult to get a simple library which creates line charts for iOS. So here's one.
 
 Very simple to use (Refer test project).
 1) Include LineGraph.h and LineGraph.m in your project.
@@ -15,7 +15,8 @@ Very simple to use (Refer test project).
     Second arguement determines the maximum data points along X-axis that would be retained in view.
     
 3) To add data points call this function and it will automatically draw your chart. [graph pushPoint:y]; 
-Here y is a integer that represents y-axis of the graph.
+Here y is a integer that represents y-axis of the graph. (Library expects this value between 0 to 100 
+and it will automatically scale to the size of your graph/chart).
 
 Thats it. Enjoy!
 
