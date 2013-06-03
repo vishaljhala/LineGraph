@@ -30,6 +30,10 @@
 }
 -(void)pushPoint:(int)y
 {
+    if(y<0)
+        y=0;
+    if(y>100)
+        y=100;
     if(m_iCurrWormSize<m_MaxWormSize)
     {
         //m_Worm[m_iCurrWormSize].x =  pnt.x;
